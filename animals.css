@@ -1,0 +1,45 @@
+#animals-container {
+    background-color: #EBECEE;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#animals {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+article {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.caracteristicas {
+    font-size: 13px;
+    text-align: center;
+}
