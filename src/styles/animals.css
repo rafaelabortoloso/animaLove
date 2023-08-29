@@ -5,12 +5,48 @@
     flex-direction: column;
 }
 
-#animals {
+#carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(200px + 20px);
     margin-top: 30px;
     display: flex;
     width: 100%;
     justify-content: center;
     cursor: pointer;
+}
+
+#carousel-controls {
+    display: flex;
+    align-items: center;
+}
+
+#prev-btn,
+#next-btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    position: absolute;
+}
+
+#prev-btn img, #next-btn img {
+    width: 50px; 
+}
+
+#prev-btn {
+    left: 0;
+}
+
+#next-btn {
+    right: 0;
 }
 
 article {
@@ -27,6 +63,7 @@ article {
 }
 
 .article img {
+    width: 100px;
     max-width: 100%;
     height: auto;
     border-radius: 5px;

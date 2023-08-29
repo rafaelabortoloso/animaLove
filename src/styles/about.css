@@ -1,0 +1,32 @@
+#about-container {
+    position: relative;
+    height: 100vh;
+}
+
+.about-background {
+    background-image: url('../../img/about.jpeg');
+    background-size: cover; 
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.about-mission,
+.about-history {
+    color: #fff;
+    text-align: center;
+    width: 25%;
+    padding: 30px;
+}
+
+.about-mission {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.about-history {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

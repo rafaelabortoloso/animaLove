@@ -1,4 +1,4 @@
-.header-container {
+#header-container {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -41,4 +41,12 @@ li {
     min-width: 120px;
     text-decoration: none;
     color: black;
+}
+
+.user-icon {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    justify-content: center;
+    padding: 20px;
 }
