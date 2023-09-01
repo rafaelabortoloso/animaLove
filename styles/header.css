@@ -42,11 +42,3 @@ li {
     text-decoration: none;
     color: black;
 }
-
-.user-icon {
-    width: 50px;
-    height: auto;
-    cursor: pointer;
-    justify-content: center;
-    padding: 20px;
-}

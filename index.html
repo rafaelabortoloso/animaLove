@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/search.css">
     <link rel="stylesheet" href="styles/animals.css">
-    <link rel="stylesheet" href="styles/table.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/back-to-top.css">
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="icon" href="../img/icon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,8 +32,7 @@
                 <li><a class="menu-itens" href="index.html">INÍCIO</a></li>
                 <li><a class="menu-itens" href="#about-container">SOBRE NÓS</a></li>
                 <li><a class="menu-itens" href="#animals-container">ADOTAR</a></li>
-                <li><a class="menu-itens" href="contato.html">CONTATO</a></li>
-                <img class="user-icon" href="login.html" src="../img/menu.png" alt="User Icon">
+                <li><a class="menu-itens" href="#contact-container">CONTATO</a></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +42,7 @@
         <section id="search-container">
             <h1 class="title-search">Procurando um novo amigo peludo?</h1>
             <h2 class="subtitle-search">Encontre seu companheiro perfeito.</h2>
-            <input id="input" placeholder="Digite suas preferências de adoção...">
+            <input id="search-input" placeholder="Digite suas preferências de adoção...">
         </section>
 
         <section id="about-container">
@@ -74,14 +73,16 @@
             <div id="carousel-wrapper">
                 <div id="carousel">
                     <article>
-                        <img src="../img/cachorro-1.jpg" alt="Animal 1">
-                        <h3>Oliver</h3>
-                        <p class="caracteristicas">Um cão cor caramelo com estilo único, sempre usando seus óculos
-                            escuros.
-                            <br /> É descontraído e adora um passeio sob o sol. Seu olhar elegante esconde uma
-                            personalidade
-                            amigável e descontraída.
-                        </p>
+                        <a href="animal1.html">
+                            <img src="../img/cachorro-1.jpg" alt="Animal 1">
+                            <h3>Oliver</h3>
+                            <p class="caracteristicas">Um cão cor caramelo com estilo único, sempre usando seus óculos
+                                escuros.
+                                <br /> É descontraído e adora um passeio sob o sol. Seu olhar elegante esconde uma
+                                personalidade
+                                amigável e descontraída.
+                            </p>
+                        </a>
                     </article>
                     <article>
                         <img src="../img/gato-1.jpg" alt="Animal 2">
@@ -160,46 +161,18 @@
             </div>
         </section>
 
-        <section>
-            <h2 class="title">INFORMAÇÕES ADICIONAIS</h2>
-            <div class="table-container">
-                <table class="animal-details-table">
-                    <thead>
-                        <tr>
-                            <th>NOME</th>
-                            <th>FAIXA DE IDADE</th>
-                            <th>MEDICAMENTOS</th>
-                            <th>ALIMENTAÇÃO</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Oliver</td>
-                            <td>Adulto</td>
-                            <td>-</td>
-                            <td>250g duas vezes ao dia</td>
-                        </tr>
-                        <tr>
-                            <td>Tico</td>
-                            <td>Filhote</td>
-                            <td>Vermífugo a cada 3 meses</td>
-                            <td>150g três vezes ao dia</td>
-                        </tr>
-                        <tr>
-                            <td>Pippin</td>
-                            <td>Filhote</td>
-                            <td>Vermífugo a cada 2 meses</td>
-                            <td>180g quatro vezes ao dia</td>
-                        </tr>
-                        <tr>
-                            <td>Fergus</td>
-                            <td>Sênior</td>
-                            <td>Suplemento para articulações</td>
-                            <td>100g duas vezes ao dia</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <section id="contact-container">
+            <h2 class="title">ENTRE EM CONTATO</h2>
+            <p>Se você está interessado em adotar um animalzinho, entre em contato conosco!</p>
+            <form>
+                <input id="name-input" required placeholder="Nome:">
+
+                <input id="email-input" required placeholder="E-mail:">
+
+                <textarea id="message-input" rows="4" required placeholder="Mensagem:"></textarea>
+
+                <button id="submit">Enviar</button>
+            </form>
         </section>
 
     </main>
@@ -212,7 +185,7 @@
         <a href="#header-container" class="scroll-link"></a>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="./src/script.js"></script>
 
 </body>
 
